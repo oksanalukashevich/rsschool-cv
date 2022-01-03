@@ -1,20 +1,105 @@
-<head>
-<style>
- .photo{
-     width: auto;
-     height: 100px;
-     border: 5px solid #00ff
- }
- .place {
-    overflow: hidden;
+:root {
+    --first-color: #A978D7;
+    --second-color: #D8BDF2;
+    --third-color: #FFFBFB;
+    --header-color: #762CBF;
+    --footer-color: #762CBF;
+    --link-color: #471C71;
+}
+
+html{
+    scroll-behavior: auto;
+}
+
+* { margin: 5px;
+    padding: 0;
+    font-family: "Merriweather", serif;
+    color: var(--third-color);
+}
+
+body{
+    background-color: var(--second-color);
+}
+
+.name{
+    display:flex;
+    flex-direction: column-reverse;
+    width: auto;
+}
+
+header{
     display: flex;
-    justify-content: right;
-    align-items: right;
- }
- </style>
- </head>
- <body>
- <div class="photo place">
-  <img src="https://photos.google.com/search/_tra_/photo/AF1QipN175cyKBi31TCbjtvwaCm8Le5-0L0bWleejxPb">
-</div>
-</body>
+    background-color: var(--header-color);
+}
+.photo {
+    width: 300px;
+    }
+.name-position{
+    position: relative;
+    flex-grow: 1;
+    text-align: right;
+    align-self: center;
+}
+
+.name-positionh1 {
+    font: bold 80px Merriweather Sans, sans-serif #FFFBFB;
+}
+.name-positionh2{
+    font: bold 50px Merriweather Sans, sans-serif #FFFBFB;
+}
+
+/*main*/
+main{
+    display: flex;
+ } 
+
+.main {
+    background-color: rgba(169, 120, 215, 0.8);
+    padding: 5px;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    width: auto;
+    }
+  
+.section-header {
+    display: flex;
+    justify-content: start;
+    font-size: 35px;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-transform: capitalize;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.list  {
+padding: 5px;
+}
+
+/*Aside*/
+aside {
+    display: grid;
+   }
+
+.aside{
+    width:auto;
+    padding: 0 0 0 10px;
+    background-color:rgba(169, 120, 215, 0.8);
+    }
+
+.aside-section > li {
+    margin: 5px 0;
+    font-size: 20px;
+    line-height: 30px;
+    list-style: none;
+  }
+
+  .section-title {
+    display: flex;
+    justify-content: start;
+    font-size: 35px;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    margin: 10px 0;
+    padding: 5px 0;
+    border-bottom: solid 2px #7e4aaf;
+  }
